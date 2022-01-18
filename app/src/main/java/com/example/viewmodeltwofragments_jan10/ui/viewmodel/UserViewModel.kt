@@ -9,7 +9,7 @@ import com.example.viewmodeltwofragments_jan10.ui.dataclass.UserDataClass
 // holds data and ui logic
 // Can share data between fragments
 // VM part of MVVM
-class CounterViewModel: ViewModel() {
+class UserViewModel: ViewModel() {
 
     private var _firstName: MutableLiveData<List<String>> = MutableLiveData()
     val firstName: LiveData<List<String>> get() = _firstName

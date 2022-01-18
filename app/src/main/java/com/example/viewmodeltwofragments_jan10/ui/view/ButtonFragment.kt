@@ -7,14 +7,14 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.viewmodeltwofragments_jan10.databinding.FragmentButtonBinding
-import com.example.viewmodeltwofragments_jan10.ui.viewmodel.CounterViewModel
+import com.example.viewmodeltwofragments_jan10.ui.viewmodel.UserViewModel
 
 class ButtonFragment: Fragment() {
 
     private var _binding: FragmentButtonBinding? = null
     private val binding: FragmentButtonBinding get() = _binding!!
 
-    private lateinit var viewModel: CounterViewModel
+    private lateinit var viewModel: UserViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -26,7 +26,7 @@ class ButtonFragment: Fragment() {
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        viewModel = ViewModelProvider(requireActivity())[CounterViewModel::class.java]
+        viewModel = ViewModelProvider(requireActivity())[UserViewModel::class.java]
         with(binding) {
             countBtn.setOnClickListener {
                 viewModel.addName()
