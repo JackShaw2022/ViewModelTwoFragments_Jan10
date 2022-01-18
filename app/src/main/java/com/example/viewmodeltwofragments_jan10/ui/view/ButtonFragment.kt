@@ -29,7 +29,7 @@ class ButtonFragment: Fragment() {
         viewModel = ViewModelProvider(requireActivity())[CounterViewModel::class.java]
         with(binding) {
             countBtn.setOnClickListener {
-                viewModel.addCount()
+                viewModel.addName()
             }
         }
     }

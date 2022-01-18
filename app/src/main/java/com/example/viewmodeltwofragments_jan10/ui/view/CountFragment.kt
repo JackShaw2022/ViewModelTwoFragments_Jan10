@@ -33,8 +33,11 @@ class CountFragment : Fragment() {
         viewModel = ViewModelProvider(requireActivity()).get(CounterViewModel::class.java)
 
         with(binding) {
-            viewModel.count.observe(viewLifecycleOwner) { count ->
-                countTv.text = count.toString()
+            viewModel.firstName.observe(viewLifecycleOwner) { firstName ->
+                firstNameTv.text = firstName.toString()
+            }
+            viewModel.lastName.observe(viewLifecycleOwner) { lastName ->
+               lastNameTv.text = lastName.toString()
             }
         }
     }
