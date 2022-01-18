@@ -6,13 +6,13 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.example.viewmodeltwofragments_jan10.databinding.FragmentCountBinding
+import com.example.viewmodeltwofragments_jan10.databinding.FragmentReviewBinding
 import com.example.viewmodeltwofragments_jan10.ui.viewmodel.UserViewModel
 
 class UserFragment : Fragment() {
 
-    private var _binding: FragmentCountBinding? = null
-    private val binding: FragmentCountBinding get() = _binding!!
+    private var _binding: FragmentReviewBinding? = null
+    private val binding: FragmentReviewBinding get() = _binding!!
 
     // lateinit because value will be assigned later
     private lateinit var viewModel: UserViewModel
@@ -22,7 +22,7 @@ class UserFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentCountBinding.inflate(inflater, container, false)
+        _binding = FragmentReviewBinding.inflate(inflater, container, false)
         return binding.root
     }
 

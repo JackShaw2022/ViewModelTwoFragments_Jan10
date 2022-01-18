@@ -1,9 +1,12 @@
 package com.example.viewmodeltwofragments_jan10.ui.viewmodel
 
+import android.widget.EditText
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.viewmodeltwofragments_jan10.ui.dataclass.UserDataClass
+import com.google.android.material.textfield.TextInputEditText
+import com.google.android.material.textfield.TextInputLayout
 
 // Lives through orientation changes
 // holds data and ui logic
@@ -19,8 +22,9 @@ class UserViewModel: ViewModel() {
     val lastName: LiveData<List<String>> get() = _lastName
     private val arrLastName = ArrayList<String>()
 
-    fun addName() {
-        var name = UserDataClass("Jon", "Kelly")
+    fun addName(firstNamePassed: String, lastNamePassed: String) {
+        var name = UserDataClass(firstNamePassed, lastNamePassed)
+
         // Grabbing current value of live data
         val currentFirstName: String = name.firstName
         val currentLastName: String = name.lastName

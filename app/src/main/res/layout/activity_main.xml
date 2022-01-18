@@ -26,6 +26,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/countFragment"
         tools:layout="@layout/fragment_entry"
-        android:name="com.example.viewmodeltwofragments_jan10.ui.view.ButtonFragment"/>
+        android:name="com.example.viewmodeltwofragments_jan10.ui.view.EntryFragment"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
