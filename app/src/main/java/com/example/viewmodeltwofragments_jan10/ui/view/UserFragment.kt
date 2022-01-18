@@ -9,7 +9,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.viewmodeltwofragments_jan10.databinding.FragmentCountBinding
 import com.example.viewmodeltwofragments_jan10.ui.viewmodel.UserViewModel
 
-class CountFragment : Fragment() {
+class UserFragment : Fragment() {
 
     private var _binding: FragmentCountBinding? = null
     private val binding: FragmentCountBinding get() = _binding!!

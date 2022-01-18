@@ -15,7 +15,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout="@layout/fragment_count"
-        android:name="com.example.viewmodeltwofragments_jan10.ui.view.CountFragment"/>
+        android:name="com.example.viewmodeltwofragments_jan10.ui.view.UserFragment"/>
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/buttonFragment"
