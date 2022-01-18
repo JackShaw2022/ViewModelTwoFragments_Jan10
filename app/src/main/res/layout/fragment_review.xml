@@ -14,7 +14,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="50"/>
+        tools:text="First Name"/>
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/lastNameTv"
@@ -25,6 +25,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/firstNameTv"
-        tools:text="50"/>
+        tools:text="Last Name"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
