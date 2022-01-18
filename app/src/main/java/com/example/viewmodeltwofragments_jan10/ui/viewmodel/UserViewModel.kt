@@ -22,12 +22,10 @@ class UserViewModel: ViewModel() {
     val lastName: LiveData<List<String>> get() = _lastName
     private val arrLastName = ArrayList<String>()
 
-    fun addName(firstNamePassed: String, lastNamePassed: String) {
-        var name = UserDataClass(firstNamePassed, lastNamePassed)
-
+    fun addName(input: UserDataClass) {
         // Grabbing current value of live data
-        val currentFirstName: String = name.firstName
-        val currentLastName: String = name.lastName
+        val currentFirstName: String = input.firstName
+        val currentLastName: String = input.lastName
 
         arrFirstName.add(currentFirstName)
         arrLastName.add(currentLastName)

@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.viewmodeltwofragments_jan10.databinding.FragmentEntryBinding
+import com.example.viewmodeltwofragments_jan10.ui.dataclass.UserDataClass
 import com.example.viewmodeltwofragments_jan10.ui.viewmodel.UserViewModel
 
 class EntryFragment: Fragment() {
@@ -31,7 +32,7 @@ class EntryFragment: Fragment() {
             submitBtn.setOnClickListener {
                 val firstNameStr = firstNameEt.text.toString()
                 val lastNameStr = lastNameEt.text.toString()
-               viewModel.addName(firstNamePassed = firstNameStr, lastNamePassed = lastNameStr)
+               viewModel.addName(UserDataClass(firstNameStr, lastNameStr))
             }
         }
     }
